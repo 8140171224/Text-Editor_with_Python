@@ -45,7 +45,7 @@ class Menubar:
 
     def show_release_notes(self):
         box_title = "Release Notes"
-        box_message = "Version 0.1 - Gutenberg"
+        box_message = "Version 0.1 - Aakashpadhiyar"
         messagebox.showinfo(box_title, box_message)
 
 
@@ -56,7 +56,7 @@ class Statusbar:
         font_specs = ("ubuntu", 12)
         
         self.status = tk.StringVar()
-        self.status.set("PyText - 0.1 Gutenberg")
+        self.status.set("PyText - 0.1 Aakashpadhiyar")
 
         label = tk.Label(parent.textarea, textvariable=self.status, fg="black",
                          bg="lightgrey", anchor='sw', font=font_specs)
@@ -66,7 +66,7 @@ class Statusbar:
         if isinstance(args[0], bool):
             self.status.set("Your File Has Been Saved!")
         else:
-            self.status.set("PyText - 0.1 Gutenberg")
+            self.status.set("PyText - 0.1 Aakashpadhiyar")
 
 
 class PyText:
